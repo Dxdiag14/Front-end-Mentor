@@ -126,15 +126,14 @@ header .navigation li a:hover::before {
   padding-bottom: 20px;
 }
 
-.middle-content2 p{
+.middle-content2 p {
   line-height: 2;
   font-weight: normal;
   color: #A2A2A2;
 }
 
 /***************************Creation Section*****************************************/
-
-.creations{
+.creations {
   width: 80%;
   height: auto;
   margin: 0 auto;
@@ -142,19 +141,19 @@ header .navigation li a:hover::before {
   position: relative;
 }
 
-.creations h2{
+.creations h2 {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   display: inline-block;
 }
 
-.button{
+.button {
   background-color: #fff;
   text-align: center;
   cursor: pointer;
   border-style: solid;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 0.85rem;
   padding: 7px 40px;
   position: absolute;
@@ -163,7 +162,52 @@ header .navigation li a:hover::before {
   transition: all 200ms;
 }
 
-.button:hover{
+.button:hover {
   color: #fff;
   background-color: #000;
+}
+
+/***************************Gallery Section*****************************************/
+.wrap {
+  position: relative;
+  width: 80%;
+  margin: 80px auto;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  display: inline-flex;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
+  background-size: 400% 400%;
+  transition: .5s all;
+}
+
+.item img {
+  mix-blend-mode: screen;
+  opacity: .9;
+}
+
+.item:hover {
+  transform: scale(1.0009);
+  box-shadow: 1px 1px 12px 2px rgba(0, 0, 0, .3);
+  background-position: 100% 100%;
+}
+
+.text {
+  width: 15.9%;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 35px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
 }
