@@ -323,7 +323,7 @@ header .navigation li a:hover::before {
 }
 
 /***************************Mobile Responsiveness*****************************************/
-@media screen and (min-width: 360px) and (max-width: 414px) {
+@media screen and (min-width: 360px) and (max-width: 480px) {
 
   /*banner*/
   .hero-image {
