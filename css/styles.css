@@ -72,6 +72,7 @@ header .navigation li {
 }
 
 header .navigation li a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #fff;
 }
@@ -91,6 +92,10 @@ header .navigation li a::before {
 
 header .navigation li a:hover::before {
   width: 60%;
+}
+
+.hamburger{
+  display: none;
 }
 
 /***************************Middle Section*****************************************/
@@ -355,13 +360,64 @@ header .navigation li a:hover::before {
     padding: 50px 22px;
   }
 
-  header .logo {
+  .header .logo {
     width: 180px;
+    z-index: 2;
   }
 
-  header .navigation {
-    display: none;
-  }
+.hamburger{
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  margin-top: 12px;
+  transform: translate(-5%, -40%);
+  z-index: 2;
+}
+
+.header ul{
+  position: fixed;
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-top: 200px;
+  flex-direction: column;
+  clip-path: circle(100px at 90% -20%);
+  -webkit-clip-path: circle(100px at 90% -20%);
+  transition: all 1s ease-out;
+}
+
+.navigation.open{
+  clip-path: circle(1000px at 90% -15%);
+-webkit-clip-path: circle(1000px at 90% -15%);
+}
+
+
+header .navigation li a::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  transition: all .5s ease-out;
+}
+
+header .navigation li a:hover::before {
+  width: 20%;
+}
+
+.header ul li{
+  padding-bottom: 40px;
+}
+
+.header ul li a{
+  font-size: 2rem;
+}
 
   /*middle*/
   .middle-content {
