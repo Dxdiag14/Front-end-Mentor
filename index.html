@@ -22,10 +22,12 @@
       background-color: #000;
       padding-bottom: 10px
     }
+
     .attribution a {
       color: #fff;
     }
-    .attribution p{
+
+    .attribution p {
       color: #A2A2A2;
     }
   </style>
@@ -33,8 +35,8 @@
 
 <body>
   <!--header-->
-  <header>
-      <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
+  <header class="header">
+    <a href="index.html"><img class="logo" src="images/logo.svg" alt="logo"></a>
     <ul class="navigation">
       <li><a href="#">About</a></li>
       <li><a href="#">Careers</a></li>
@@ -45,6 +47,7 @@
   </header>
   <section class="banner" id="banner">
     <img class="hero-image" src="images/desktop/image-hero.jpg" alt="banner">
+    <img class="hero-image1" src="images/mobile/image-hero.jpg" alt="banner">
     <div class="content">
       <h1>Immersive experiences that deliver</h1>
     </div>
@@ -74,38 +77,48 @@
     <div class="wrap1">
       <div class="wrap">
         <div class="item">
-          <img src="images/desktop/image-deep-earth.jpg" alt="image-deep-earth">
+          <img class="earth1" src="images/desktop/image-deep-earth.jpg" alt="image-deep-earth">
+          <img class="earth2" src="images/mobile/image-deep-earth.jpg" alt="image-deep-earth">
           <p class="text">Deep earth</p>
         </div>
         <div class="item">
-          <img src="images/desktop/image-night-arcade.jpg" alt="image-night-arcade">
+          <img class="arcade1" src="images/desktop/image-night-arcade.jpg" alt="image-night-arcade">
+          <img class="arcade2" src="images/mobile/image-night-arcade.jpg" alt="image-night-arcade">
           <p class="text">Night arcade</p>
         </div>
         <div class="item">
-          <img src="images/desktop/image-soccer-team.jpg" alt="image-soccer-team">
+          <img class="soccer1" src="images/desktop/image-soccer-team.jpg" alt="image-soccer-team">
+          <img class="soccer2" src="images/mobile/image-soccer-team.jpg" alt="image-soccer-team">
           <p class="text">Soccer team VR</p>
         </div>
         <div class="item">
-          <img src="images/desktop/image-grid.jpg" alt="image-grid.jpg">
-          <p class="text">The grid</p>
+          <img class="grid1" src="images/desktop/image-grid.jpg" alt="image-grid.jpg">
+          <img class="grid2" src="images/mobile/image-grid.jpg" alt="image-grid.jpg">
+          <p class="text">The <br>grid</p>
         </div>
         <div class="item">
-          <img src="images/desktop/image-from-above.jpg" alt="image-from-above.jpg">
+          <img class="above1" src="images/desktop/image-from-above.jpg" alt="image-from-above.jpg">
+          <img class="above2" src="images/mobile/image-from-above.jpg" alt="image-from-above.jpg">
           <p class="text">From up above VR</p>
         </div>
         <div class="item">
-          <img src="images/desktop/image-pocket-borealis.jpg" alt="image-pocket-borealis.jpg">
+          <img class="pocket1" src="images/desktop/image-pocket-borealis.jpg" alt="image-pocket-borealis.jpg">
+          <img class="pocket2" src="images/mobile/image-pocket-borealis.jpg" alt="image-pocket-borealis.jpg">
           <p class="text">Pocket borealis</p>
         </div>
         <div class="item">
-          <img src="images/desktop/image-curiosity.jpg" alt="image-curiosity.jpg">
+          <img class="curio1" src="images/desktop/image-curiosity.jpg" alt="image-curiosity.jpg">
+          <img class="curio2" src="images/mobile/image-curiosity.jpg" alt="image-curiosity.jpg">
           <p class="text">The curiosity</p>
         </div>
         <div class="item">
-          <img src="images/desktop/image-fisheye.jpg" alt="image-fisheye.jpg">
+          <img class="fish1" src="images/desktop/image-fisheye.jpg" alt="image-fisheye.jpg">
+          <img class="fish2" src="images/mobile/image-fisheye.jpg" alt="image-fisheye.jpg">
           <p class="text">Make it fisheye</p>
         </div>
+
       </div>
+      <input type="button" class="button1" value="See all">
     </div>
   </main>
   <!--/main-->
@@ -126,10 +139,10 @@
         </div>
         <div class="footer-section-2">
           <ul class="navigation-3">
-            <li><a href="#"><img src="images/icon-facebook.svg" alt="icon-facebook"></a></li>
-            <li><a href="#"><img src="images/icon-twitter.svg" alt="icon-twitter"></a></li>
-            <li><a href="#"><img src="images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
-            <li><a href="#"><img src="images/icon-instagram.svg" alt="icon-instagram"></a></li>
+            <li><a href="#"><img class="icon" src="images/icon-facebook.svg" alt="icon-facebook"></a></li>
+            <li><a href="#"><img class="icon" src="images/icon-twitter.svg" alt="icon-twitter"></a></li>
+            <li><a href="#"><img class="icon" src="images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
+            <li><a href="#"><img class="icon" src="images/icon-instagram.svg" alt="icon-instagram"></a></li>
           </ul>
           <p>© 2021 Loopstudios. All rights reserved.</p>
         </div>
@@ -141,7 +154,7 @@
 
   <div class="attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">HJ Santos Miranda</a>.</p>
+      Coded by <a href="#">HJ Santos Miranda</a>.</p>
   </div>
 </body>
 

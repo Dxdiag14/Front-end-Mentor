@@ -23,6 +23,10 @@ body {
   min-height: 100vh;
 }
 
+.hero-image1 {
+  display: none;
+}
+
 .content {
   position: absolute;
   border-style: solid;
@@ -71,6 +75,7 @@ header .navigation li a {
   text-decoration: none;
   color: #fff;
 }
+
 
 header .navigation li a::before {
   content: '';
@@ -176,6 +181,10 @@ header .navigation li a:hover::before {
   align-items: center;
 }
 
+.earth2, .arcade2, .soccer2, .grid2, .above2, .pocket2, .curio2, .fish2 {
+  display: none;
+}
+
 .item {
   position: relative;
   display: inline-flex;
@@ -210,6 +219,10 @@ header .navigation li a:hover::before {
   text-transform: uppercase;
 }
 
+.button1{
+  display: none;
+}
+
 /***************************Footer Section*****************************************/
 .footer-footer {
   background-color: #000;
@@ -238,15 +251,14 @@ header .navigation li a:hover::before {
   display: flex;
 }
 
-.footer-section-1 .navigation-2 li{
+.footer-section-1 .navigation-2 li {
   list-style: none;
   margin-right: 30px;
   position: relative;
   padding-bottom: 15px;
-
 }
 
-.footer-section-1 .navigation-2 li a{
+.footer-section-1 .navigation-2 li a {
   font-weight: normal;
   font-size: 0.75rem;
   letter-spacing: 2px;
@@ -254,7 +266,7 @@ header .navigation li a:hover::before {
   color: #fff;
 }
 
-.footer-section-1 .navigation-2 li a::before{
+.footer-section-1 .navigation-2 li a::before {
   content: '';
   display: block;
   height: 2px;
@@ -265,7 +277,6 @@ header .navigation li a:hover::before {
   left: 10px;
   transition: all .2s ease-out;
 }
-
 
 .footer-section-1 .navigation-2 li a:hover::before {
   width: 60%;
@@ -281,14 +292,14 @@ header .navigation li a:hover::before {
   margin-bottom: 10px;
 }
 
-.footer-section-2 .navigation-3 li{
+.footer-section-2 .navigation-3 li {
   list-style: none;
   margin-left: 30px;
   position: relative;
   padding-bottom: 15px;
 }
 
-.footer-section-2 .navigation-3 li a::before{
+.footer-section-2 .navigation-3 li a::before {
   content: '';
   display: block;
   height: 2px;
@@ -300,7 +311,6 @@ header .navigation li a:hover::before {
   transition: all .2s ease-out;
 }
 
-
 .footer-section-2 .navigation-3 li a:hover::before {
   width: 50%;
 }
@@ -310,4 +320,217 @@ header .navigation li a:hover::before {
   font-size: 0.75rem;
   letter-spacing: 2px;
   color: #fff;
+}
+
+/***************************Mobile Responsiveness*****************************************/
+@media screen and (min-width: 375px) and (max-width: 414px) {
+
+  /*banner*/
+  .hero-image {
+    display: none;
+  }
+
+  .hero-image1 {
+    width: 100%;
+    display: block;
+  }
+
+  .content {
+    width: 90%;
+    top: 33%;
+    left: 5%;
+  }
+
+  .content h1 {
+    width: 80%;
+    padding: 20px;
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  /*header*/
+  header {
+    padding: 50px 22px;
+  }
+
+  header .logo {
+    width: 180px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  /*middle*/
+  .middle-content {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 40px;
+  }
+
+  .middle-content img {
+    width: 100%;
+    height: 40%;
+  }
+
+  .middle-content2 {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    top: 0;
+    padding: 0;
+  }
+
+  .middle-content2 h2 {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
+  .middle-content2 p {
+    font-weight: bold;
+  }
+
+  /*Creations*/
+  .creations {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -30px;
+  }
+
+  .creations h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+
+.button{
+  display: none;
+}
+
+  /*middle*/
+  .wrap{
+    margin-bottom: 20px;
+  }
+  .earth1, .arcade1, .soccer1, .grid1, .above1, .pocket1, .curio1, .fish1 {
+    display: none;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .item img {
+    width: 100%;
+  }
+
+  .earth2, .arcade2, .soccer2, .grid2, .above2, .pocket2, .curio2, .fish2 {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .text {
+    width: 45%;
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-shadow: 2px 2px 5px #000;
+  }
+
+  .button1 {
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-style: solid;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 200ms;
+    padding: 10px 50px;
+    left: 0;
+    margin-left: 110px;
+  }
+
+  .button1:hover {
+    color: #fff;
+    background-color: #000;
+  }
+
+  /*Footer*/
+  .footer-main {
+    padding: 0;
+    margin-top: 100px;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .footer-section-1 {
+    margin-top: 50px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 50%;
+  }
+
+  .footer-section-1 ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+  }
+
+  .footer-section-1 .navigation-2 li {
+    margin: 10px 0;
+  }
+
+  .footer-section-1 .navigation-2 li a {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .footer-section-2 {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-section-2 ul {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .footer-section-2 .navigation-3 li {
+    margin: 0;
+  }
+
+  .footer-section-2 .navigation-3 li a {
+    padding-right: 20px;
+  }
+
+  .footer-section-2 p {
+    color: #A2A2A2;
+    font-size: .90rem;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+  }
+
 }
